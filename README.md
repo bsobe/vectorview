@@ -4,6 +4,24 @@
 
 ### Usage
 
+```gradle
+repositories {
+    maven {
+        url 'https://dl.bintray.com/bsobe/maven/'
+    }
+}
+
+dependencies {
+    compile 'com.bsobe:vectorview:0.1.0'
+}
+```
+
+### Note: If your project min-sdk is under API-16, add this line to AndroidManifest.xml
+```xml
+<uses-sdk tools:overrideLibrary="com.bsobe.vectorview" />
+```
+
+
 Usage of Drawable
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -15,13 +33,13 @@ Usage of Drawable
             app:drawableTop="@drawable/ic_up_black_24" />
 
 Usage of Tint
-```xml
+
 <?xml version="1.0" encoding="utf-8"?>
 <com.bsobe.vectorview.VectorTextView
             ...
             app:drawableBottom="@drawable/ic_down_black_24"
             app:drawableTint="@color/colorAccent"/>
-
+```
 
 Look [Sample projects] [sample] for more information
 
