@@ -5,13 +5,8 @@
 ### Usage
 
 ```gradle
-repositories {
-    maven {
-        url 'https://dl.bintray.com/bsobe/maven/'
-    }
-}
-
 dependencies {
+    ...
     compile 'com.bsobe:vectorview:0.1.0'
 }
 ```
